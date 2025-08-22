@@ -347,7 +347,7 @@ export default function Home() {
 
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At BATAL, we help you make confident decisions with realistic design visualizations tailored to your space. Whether it's a shopfront, hanging sign, or directional signage, we provide detailed design previews including materials, lighting style, and mounting so you know exactly what to expect before fabrication begins. Just like the sample below, we offer true-to-scale mockups to align your vision with the final result.
+                  At BATAL, we help you make confident decisions with realistic design visualizations tailored to your space. Whether it&apos;s a shopfront, hanging sign, or directional signage, we provide detailed design previews including materials, lighting style, and mounting so you know exactly what to expect before fabrication begins. Just like the sample below, we offer true-to-scale mockups to align your vision with the final result.
                 </p>
               </div>
             </div>
@@ -446,7 +446,13 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Products */}
             <div className="space-y-8">
-             <img src="/images/Rectangle 12.png" alt="" />
+             <Image
+               src="/images/Rectangle 12.png"
+               alt="Rectangle 12"
+               width={500}
+               height={400}
+               className="w-full h-auto object-cover"
+             />
             </div>
 
             {/* Right Content */}
