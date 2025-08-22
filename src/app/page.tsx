@@ -322,120 +322,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Visualization Section */}
-      <section className="bg-white">
-        {/* Top Services Strip */}
-        <div className="w-full">
-          <Image
-            src="/images/services strip.png"
-            alt="Services Strip"
-            width={1920}
-            height={4}
-            className="w-full h-1 object-cover"
-          />
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-4xl font-bold text-gray-900">Complete Visualization Before Production</h2>
-                <h3 className="text-2xl font-bold text-gray-800 italic">Help you take Better Decision</h3>
-                <p className="text-xl text-green-600 italic">Looking for a trusted signage company in Dubai?</p>
-              </div>
 
-              <div className="space-y-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  At BATAL, we help you make confident decisions with realistic design visualizations tailored to your space. Whether it's a shopfront, hanging sign, or directional signage, we provide detailed design previews including materials, lighting style, and mounting so you know exactly what to expect before fabrication begins. Just like the sample below, we offer true-to-scale mockups to align your vision with the final result.
-                </p>
-              </div>
-            </div>
-
-            {/* Right Content - Three Graphics Horizontally */}
-            <div className="flex items-center justify-center gap-6">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200">
-                  <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <div className="text-center">
-                  <div className="text-lg font-bold text-gray-800 mb-1">INFINITY</div>
-                  <div className="text-sm text-gray-600">VISUALS. CAMPAIGNS. CONTENT</div>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-20 h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200 relative">
-                  <div className="space-y-1">
-                    <div className="w-12 h-3 bg-amber-600 rounded"></div>
-                    <div className="w-12 h-3 bg-lime-500 rounded"></div>
-                    <div className="w-12 h-3 bg-black rounded"></div>
-                  </div>
-                  <div className="absolute -top-2 -right-2">
-                    <svg className="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                    </svg>
-                  </div>
-                </div>
-                <div className="text-sm text-gray-600">Creative Ideas</div>
-              </div>
-              
-              <div className="text-center">
-                <div className="w-20 h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-gray-800 mb-1">∞</div>
-                    <div className="text-sm text-gray-600">INFINITY</div>
-                  </div>
-                </div>
-                <div className="text-sm text-gray-600">3D Branding</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Bottom Services Strip */}
-        <div className="w-full">
-          <Image
-            src="/images/services strip.png"
-            alt="Services Strip"
-            width={1920}
-            height={4}
-            className="w-full h-1 object-cover"
-          />
-        </div>
-      </section>
-
-      {/* Services List Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Services */}
-            <div className="space-y-6">
-              <div className="space-y-4">
-                <div className="text-2xl font-bold text-green-600">BATAL Illuminated Signage</div>
-                <div className="text-2xl font-bold text-green-600">BATAL Vinyl & Frosted Sticker</div>
-                <div className="text-2xl font-bold text-green-600 bg-gray-100 px-4 py-2 rounded-lg">BATAL Service</div>
-                <div className="text-2xl font-bold text-green-600">BATAL Pylon Hoardings</div>
-                <div className="text-2xl font-bold text-green-600">BATAL Wayfinding</div>
-                <div className="text-2xl font-bold text-green-600">BATAL Vehicle Branding</div>
-              </div>
-            </div>
-
-            {/* Right Image */}
-            <div className="text-center">
-              <Image
-                src="/images/Group.png"
-                alt="3D Rendered Signage"
-                width={500}
-                height={400}
-                className="rounded-lg shadow-xl mx-auto object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Product Showcase Section */}
       <section className="py-20 bg-gray-50">
@@ -563,20 +450,6 @@ export default function Home() {
           <p className="text-lg">&copy; 2024 BATAL. All rights reserved.</p>
         </div>
       </footer>
-
-      {/* Visualization Section */}
-      <section className="bg-white">
-        {/* Top Services Strip */}
-        <div className="w-full">
-          <Image
-            src="/images/services strip.png"
-            alt="Services Strip"
-            width={1920}
-            height={4}
-            className="w-full h-1 object-cover"
-          />
-        </div>
-      </section>
     </div>
   );
 }
