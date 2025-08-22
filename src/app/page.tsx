@@ -9,8 +9,9 @@ export default function Home() {
 
       {/* Hero Section with Asset SVG */}
       <section className="relative py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
+          {/* Left Content Container */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:col-span-1">
             {/* Left Content */}
             <div className="space-y-8">
               <div className="space-y-4">
@@ -22,12 +23,15 @@ export default function Home() {
                 <p className="text-xl text-green-600 font-semibold">Powered by BATAL HEROES</p>
               </div>
 
-              {/* Colored Line */}
-              <div className="flex space-x-1">
-                <div className="w-8 h-2 bg-red-500"></div>
-                <div className="w-8 h-2 bg-black"></div>
-                <div className="w-8 h-2 bg-green-500"></div>
-                <div className="w-8 h-2 bg-yellow-400"></div>
+              {/* Color Strip Image */}
+              <div className="flex justify-center">
+                <Image
+                  src="/images/Group (7).png"
+                  alt="Color Strip"
+                  width={300}
+                  height={10}
+                  className="h-2 w-auto"
+                />
               </div>
 
               {/* Features */}
@@ -68,99 +72,67 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Content with Asset SVG */}
-            <div className="relative">
-              <div className="p-4">
-                <div className="bg-gray-100 p-8">
-                  <div className="space-y-6">
-                    {/* Asset SVG */}
-                    <div className="text-center">
-                      <Image
-                        src="/images/Asset 1 1 (1).svg"
-                        alt="Asset SVG"
-                        width={600}
-                        height={500}
-                        className="mx-auto"
-                      />
-                    </div>
-                    
-                    {/* City Scene with Signs */}
-                    {/* <div className="relative">
-                      <div className="bg-white p-4 rounded-lg shadow-lg">
-                        <div className="grid grid-cols-3 gap-4">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-green-500 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                              <span className="text-white text-xs font-bold">ROOF SIGN</span>
-                            </div>
-                          </div>
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-yellow-400 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                              <span className="text-white text-xs font-bold">HOARDING / BILLBOARD</span>
-                            </div>
-                          </div>
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-red-500 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                              <span className="text-white text-xs font-bold">BUILDING WRAP</span>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="grid grid-cols-2 gap-4 mt-4">
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-black rounded-lg mx-auto mb-2 flex items-center justify-center">
-                              <span className="text-white text-xs font-bold">SHOPFRONT SIGN</span>
-                            </div>
-                          </div>
-                          <div className="text-center">
-                            <div className="w-16 h-16 bg-green-500 rounded-lg mx-auto mb-2 flex items-center justify-center">
-                              <span className="text-white text-xs font-bold">HOARDING</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+          
+          {/* Right Content with Asset SVG - Full Width */}
+          <div className="relative w-full h-full lg:col-span-1">
+            <Image
+              src="/images/Asset 1 1 (1).svg"
+              alt="Asset SVG"
+              width={1500}
+              height={900}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
         </div>
       </section>
 
       {/* Services Section */}
-      <section className="bg-green-800 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+      <section className="bg-green-800 py-12 relative">
+        {/* Circular Images - Positioned to overlap with hero section */}
+        <div className="absolute -top-20 left-1/2 transform -translate-x-1/2">
+          <div className="grid grid-cols-3 gap-16">
             <div className="text-center">
-              <Image
-                src="/images/Group (1).png"
-                alt="Illuminated SIOUX Sign"
-                width={300}
-                height={300}
-                className="rounded-full mx-auto mb-4 object-cover"
-              />
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <Image
+                  src="/images/Group (1).png"
+                  alt="Illuminated SIOUX Sign"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             <div className="text-center">
-              <Image
-                src="/images/Group (2).png"
-                alt="Retail Space Interior"
-                width={300}
-                height={300}
-                className="rounded-full mx-auto mb-4 object-cover"
-              />
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <Image
+                  src="/images/Group (2).png"
+                  alt="Retail Space Interior"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             <div className="text-center">
-              <Image
-                src="/images/Group (3).png"
-                alt="Signage Components"
-                width={300}
-                height={300}
-                className="rounded-full mx-auto mb-4 object-cover"
-              />
+              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <Image
+                  src="/images/Group (3).png"
+                  alt="Signage Components"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
 
           {/* Services List */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-6">
             <div className="flex flex-wrap justify-center items-center gap-4 text-white text-2xl font-bold">
               <span>Signboards</span>
               <div className="w-px h-8 bg-white"></div>
@@ -175,26 +147,80 @@ export default function Home() {
           </div>
 
           {/* Description */}
-          <div className="text-center text-white text-lg max-w-4xl mx-auto mb-8">
+          <div className="text-center text-white text-lg max-w-4xl mx-auto mb-6">
             <p>
               Our expert team fabricates and installs customized 3D letter signs, illuminated shopfronts, and wayfinding systems across Dubai and Sharjah
             </p>
           </div>
 
           {/* Colored Line */}
-          <div className="flex justify-center space-x-1">
+          {/* <div className="flex justify-center space-x-1">
             <div className="w-8 h-2 bg-red-500"></div>
             <div className="w-8 h-2 bg-black"></div>
             <div className="w-8 h-2 bg-green-500"></div>
             <div className="w-8 h-2 bg-yellow-400"></div>
+          </div> */}
+        </div>
+      </section>
+
+      {/* Image Collage Section */}
+      <section className="bg-white">
+        {/* Four Images in One Row */}
+        <div className="grid grid-cols-4 gap-0 w-full">
+          <div className="w-full h-[458px] overflow-hidden">
+            <Image
+              src="/images/Group (5).png"
+              alt="CUZCO RESTAURANT Sign"
+              width={360}
+              height={458}
+              className="w-full h-full object-cover"
+            />
           </div>
+          <div className="w-full h-[458px] overflow-hidden">
+            <Image
+              src="/images/Group (3).png"
+              alt="ILIO Sign with Cherub"
+              width={360}
+              height={458}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-full h-[458px] overflow-hidden">
+            <Image
+              src="/images/Group (2).png"
+              alt="CONNECT AI Illuminated Sign"
+              width={360}
+              height={458}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-full h-[458px] overflow-hidden">
+            <Image
+              src="/images/Group (1).png"
+              alt="Modern Building with ILIO Display"
+              width={360}
+              height={458}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        
+        {/* Services Strip Image at Bottom */}
+        <div className="w-full">
+          <Image
+            src="/images/services strip.png"
+            alt="Services Strip"
+            width={1920}
+            height={4}
+            className="w-full h-1 object-cover"
+          />
         </div>
       </section>
 
       {/* BATAL Service Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Content */}
             <div className="space-y-8">
               <div className="inline-block">
@@ -205,33 +231,46 @@ export default function Home() {
 
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  BATAL is a top-rated signage company in Dubai, offering custom signage solutions for businesses across the UAE. We specialize in illuminated signs, 3D letter signage, and glass & vinyl decals to wayfinding systems, hoardings, and vehicle branding. We help brands stand out with fast delivery and durable results.
+                  BATAL is a top-rated signage company in Dubai, offering custom signage solutions for businesses across the UAE. We specialize in illuminated signs, 3D letter signage, and glass & vinyl decals to wayfinding systems, hoardings, and vehicle branding. Our expert team designs, fabricates, and installs signs for shops, malls, buildings, offices, restaurants, and more with fast delivery and durable results. Trust BATAL for high-impact visual branding.
                 </p>
 
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Illuminated Signs</h3>
-                    <p className="text-gray-600">Durable illuminated signage in Dubai with 24/7 exposure.</p>
+                <div className="grid grid-cols-2 gap-x-8 gap-y-6 mt-8">
+                  {/* Left Column */}
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Illuminated Signs</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">Energy-efficient LED and backlit signs for shops, restaurants, and offices. Durable and suitable for high-traffic areas and 24/7 exposure in Dubai and Sharjah.</p>
+                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">3D Letters</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">3D letter signs in acrylic, metal, or wood—ideal for shopfronts, offices, and receptions. Custom design, premium finishes, and long-lasting quality across the UAE.</p>
+                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Wayfinding & Directionals</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">Clear, custom wayfinding signage for malls, offices, hospitals, and buildings. Designed for function, brand consistency, and professional installation across Dubai.</p>
+                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">3D Letters</h3>
-                    <p className="text-gray-600">3D letter signs in acrylic, metal or wood—ideal for shopfronts, offices, and receptions with premium finishes and long-lasting quality.</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Wayfinding & Directionals</h3>
-                    <p className="text-gray-600">Clear, custom wayfinding signage for malls, offices, hospitals, and buildings designed for function and brand consistency.</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Glass & Vinyl Signs</h3>
-                    <p className="text-gray-600">Vinyl decals, glass frosting, and logo stickers for interiors or storefronts—weatherproof, removable, and perfect for branding.</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Pylon/Hoardings</h3>
-                    <p className="text-gray-600">Large pylon signs and construction hoardings built to meet Dubai Municipality standards, ideal for real estate and outdoor advertising.</p>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">Vehicle Branding</h3>
-                    <p className="text-gray-600">Transform cars, vans, and bikes into mobile ads with custom vehicle wraps and branding stickers, suitable for delivery fleets and service vehicles.</p>
+                  
+                  {/* Right Column */}
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Glass & Vinyl Signs</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">Upgrade interiors or storefronts with vinyl decals, glass frosting, and logo stickers. Weatherproof, removable, and perfect for branding in offices, cafes, or retail spaces.</p>
+                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Pylon/Hoardings</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">Large pylon signs and construction hoardings built to Dubai Municipality standards. Ideal for developers, real estate, and outdoor advertising.</p>
+                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">Vehicle Branding</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed">Turn cars, vans, and bikes into mobile ads with custom vehicle wraps and branding stickers. Ideal for delivery fleets and service vehicles across the UAE.</p>
+                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -284,70 +323,87 @@ export default function Home() {
       </section>
 
       {/* Visualization Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-white">
+        {/* Top Services Strip */}
+        <div className="w-full">
+          <Image
+            src="/images/services strip.png"
+            alt="Services Strip"
+            width={1920}
+            height={4}
+            className="w-full h-1 object-cover"
+          />
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-4xl font-bold text-gray-900">Complete Visualization Before Production</h2>
-                <h3 className="text-2xl font-bold text-gray-800">Help you take Better Decision</h3>
+                <h3 className="text-2xl font-bold text-gray-800 italic">Help you take Better Decision</h3>
                 <p className="text-xl text-green-600 italic">Looking for a trusted signage company in Dubai?</p>
               </div>
 
               <div className="space-y-6">
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  At BATAL, we help you make confident decisions with realistic design visualizations tailored to your space. We provide detailed design previews for shopfronts, hanging signs, or directional signage, including materials, lighting style, and mounting. We offer true-to-scale mockups to align your vision with the final result.
+                  At BATAL, we help you make confident decisions with realistic design visualizations tailored to your space. Whether it's a shopfront, hanging sign, or directional signage, we provide detailed design previews including materials, lighting style, and mounting so you know exactly what to expect before fabrication begins. Just like the sample below, we offer true-to-scale mockups to align your vision with the final result.
                 </p>
-
-                <div className="flex items-center gap-6">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-2">
-                      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                      </svg>
-                    </div>
-                    <span className="text-sm text-gray-600">Laptop</span>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-2">
-                      <svg className="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                      </svg>
-                    </div>
-                    <span className="text-sm text-gray-600">Lightbulb</span>
-                  </div>
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-2">
-                      <span className="text-2xl font-bold text-purple-600">∞</span>
-                    </div>
-                    <span className="text-sm text-gray-600">INFICITY</span>
-                  </div>
-                </div>
               </div>
             </div>
 
-            {/* Right Content */}
-            <div className="text-center">
-              <Image
-                src="/images/Group 4.png"
-                alt="NIKE 3D Rendered Sign"
-                width={500}
-                height={400}
-                className="rounded-lg shadow-xl mx-auto object-cover"
-              />
+            {/* Right Content - Three Graphics Horizontally */}
+            <div className="flex items-center justify-center gap-6">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200">
+                  <svg className="w-10 h-10 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div className="text-center">
+                  <div className="text-lg font-bold text-gray-800 mb-1">INFINITY</div>
+                  <div className="text-sm text-gray-600">VISUALS. CAMPAIGNS. CONTENT</div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200 relative">
+                  <div className="space-y-1">
+                    <div className="w-12 h-3 bg-amber-600 rounded"></div>
+                    <div className="w-12 h-3 bg-lime-500 rounded"></div>
+                    <div className="w-12 h-3 bg-black rounded"></div>
+                  </div>
+                  <div className="absolute -top-2 -right-2">
+                    <svg className="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                    </svg>
+                  </div>
+                </div>
+                <div className="text-sm text-gray-600">Creative Ideas</div>
+              </div>
+              
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-gray-800 mb-1">∞</div>
+                    <div className="text-sm text-gray-600">INFINITY</div>
+                  </div>
+                </div>
+                <div className="text-sm text-gray-600">3D Branding</div>
+              </div>
             </div>
           </div>
         </div>
-
-        {/* Separator */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-          <div className="flex space-x-1">
-            <div className="w-8 h-2 bg-red-500"></div>
-            <div className="w-8 h-2 bg-yellow-400"></div>
-            <div className="w-8 h-2 bg-green-500"></div>
-            <div className="w-8 h-2 bg-black"></div>
-          </div>
+        
+        {/* Bottom Services Strip */}
+        <div className="w-full">
+          <Image
+            src="/images/services strip.png"
+            alt="Services Strip"
+            width={1920}
+            height={4}
+            className="w-full h-1 object-cover"
+          />
         </div>
       </section>
 
@@ -395,15 +451,17 @@ export default function Home() {
                   <div className="w-20 h-20 bg-amber-100 rounded-lg flex items-center justify-center mb-2 mx-auto">
                     <span className="text-3xl font-bold text-amber-800">2</span>
                   </div>
-                  <div className="w-20 h-20 bg-amber-100 rounded-lg flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-3xl font-bold text-amber-800">3</span>
+                  <div className="text-center">
+                    <div className="w-20 h-20 bg-amber-100 rounded-lg flex items-center justify-center mb-2 mx-auto">
+                      <span className="text-3xl font-bold text-amber-800">3</span>
+                    </div>
                   </div>
                 </div>
                 <div className="text-center">
                   <div className="w-20 h-20 bg-amber-100 rounded-lg flex items-center justify-center mb-2 mx-auto">
                     <span className="text-3xl font-bold text-amber-800">4</span>
                   </div>
-                  <div className="w-20 h-20 bg-amber-100 rounded-lg flex items-center mb-2 mx-auto">
+                  <div className="w-20 h-20 bg-amber-100 rounded-lg flex items-center justify-center mb-2 mx-auto">
                     <span className="text-3xl font-bold text-amber-800">5</span>
                   </div>
                 </div>
@@ -505,6 +563,20 @@ export default function Home() {
           <p className="text-lg">&copy; 2024 BATAL. All rights reserved.</p>
         </div>
       </footer>
+
+      {/* Visualization Section */}
+      <section className="bg-white">
+        {/* Top Services Strip */}
+        <div className="w-full">
+          <Image
+            src="/images/services strip.png"
+            alt="Services Strip"
+            width={1920}
+            height={4}
+            className="w-full h-1 object-cover"
+          />
+        </div>
+      </section>
     </div>
   );
 }
