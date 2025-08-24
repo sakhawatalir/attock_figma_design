@@ -224,53 +224,90 @@ export default function Home() {
             {/* Left Content */}
             <div className="space-y-8">
               <div className="inline-block">
-                <div className="bg-green-100 border-2 border-green-500 rounded-full px-8 py-3">
-                  <h2 className="text-2xl font-bold text-green-800">BATAL Service</h2>
+                <div className="border-1 border-green-500 rounded-full px-4 py-1">
+                  <h2 className="text-[26px] font-bold"><i className="text-green-800">BATAL</i> Service</h2>
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  BATAL is a top-rated signage company in Dubai, offering custom signage solutions for businesses across the UAE. We specialize in illuminated signs, 3D letter signage, and glass & vinyl decals to wayfinding systems, hoardings, and vehicle branding. Our expert team designs, fabricates, and installs signs for shops, malls, buildings, offices, restaurants, and more with fast delivery and durable results. Trust BATAL for high-impact visual branding.
+              <div className="space-y-2">
+                <p className="text-[16px] text-gray-700 leading-relaxed">
+                  BATAL is a top-rated signage company in Dubai, offering custom signage solutions for businesses across the UAE.<br /> We specialize in illuminated signs, 3D letter signage, and glass & vinyl decals to wayfinding systems, hoardings, and vehicle branding. Our expert team designs, fabricates, and installs signs for shops, malls, buildings, offices, restaurants, and more with fast delivery and durable results. Trust BATAL for high-impact visual branding.
                 </p>
 
-                <div className="grid grid-cols-2 gap-x-8 gap-y-6 mt-8">
-                  {/* Left Column */}
-                  <div className="space-y-6">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Illuminated Signs</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">Energy-efficient LED and backlit signs for shops, restaurants, and offices. Durable and suitable for high-traffic areas and 24/7 exposure in Dubai and Sharjah.</p>
-                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">3D Letters</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">3D letter signs in acrylic, metal, or wood—ideal for shopfronts, offices, and receptions. Custom design, premium finishes, and long-lasting quality across the UAE.</p>
-                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Wayfinding & Directionals</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">Clear, custom wayfinding signage for malls, offices, hospitals, and buildings. Designed for function, brand consistency, and professional installation across Dubai.</p>
-                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
-                    </div>
+                <div className="grid grid-cols-2 gap-x-8 gap-y-8 mt-4">
+                  {/* Row 1 */}
+                  <div className="space-y-3">
+                    <h3 className="text-[16px] text-gray-900 font-semibold">Illuminated Signs</h3>
+                    <p className="text-gray-600 text-[12px] leading-relaxed">Energy-efficient LED and backlit signs for shops, restaurants, and offices. Durable and suitable for high-traffic areas and 24/7 exposure in Dubai and Sharjah.</p>
+                    <Image
+                      src="/images/services batal strip.png"
+                      alt="Services Strip"
+                      width={147}
+                      height={4}
+                      className="w-[147px] h-[4px] object-cover"
+                    />
                   </div>
                   
-                  {/* Right Column */}
-                  <div className="space-y-6">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Glass & Vinyl Signs</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">Upgrade interiors or storefronts with vinyl decals, glass frosting, and logo stickers. Weatherproof, removable, and perfect for branding in offices, cafes, or retail spaces.</p>
-                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Pylon/Hoardings</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">Large pylon signs and construction hoardings built to Dubai Municipality standards. Ideal for developers, real estate, and outdoor advertising.</p>
-                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Vehicle Branding</h3>
-                      <p className="text-gray-600 text-sm leading-relaxed">Turn cars, vans, and bikes into mobile ads with custom vehicle wraps and branding stickers. Ideal for delivery fleets and service vehicles across the UAE.</p>
-                      <div className="w-16 h-1 bg-yellow-400 mt-2"></div>
-                    </div>
+                  <div className="space-y-3">
+                    <h3 className="text-[16px] text-gray-900 font-semibold">Glass & Vinyl Signs</h3>
+                    <p className="text-gray-600 text-[12px] leading-relaxed">Upgrade interiors or storefronts with vinyl decals, glass frosting, and logo stickers. Weatherproof, removable, and perfect for branding in offices, cafes, or retail spaces.</p>
+                    <Image
+                      src="/images/services batal strip.png"
+                      alt="Services Strip"
+                      width={147}
+                      height={4}
+                      className="w-[147px] h-[4px] object-cover"
+                    />
+                  </div>
+                  
+                  {/* Row 2 */}
+                  <div className="space-y-3">
+                    <h3 className="text-[16px] text-gray-900 font-semibold">3D Letters</h3>
+                    <p className="text-gray-600 text-[12px] leading-relaxed">3D letter signs in acrylic, metal, or wood—ideal for shopfronts, offices, and receptions. Custom design, premium finishes, and long-lasting quality across the UAE.</p>
+                    <Image
+                      src="/images/services batal strip.png"
+                      alt="Services Strip"
+                      width={147}
+                      height={4}
+                      className="w-[147px] h-[4px] object-cover"
+                    />
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h3 className="text-[16px] text-gray-900 font-semibold">Pylon/Hoardings</h3>
+                    <p className="text-gray-600 text-[12px] leading-relaxed">Large pylon signs and construction hoardings built to Dubai Municipality standards. Ideal for developers, real estate, and outdoor advertising.</p>
+                    <Image
+                      src="/images/services batal strip.png"
+                      alt="Services Strip"
+                      width={147}
+                      height={4}
+                      className="w-[147px] h-[4px] object-cover"
+                    />
+                  </div>
+                  
+                  {/* Row 3 */}
+                  <div className="space-y-3">
+                    <h3 className="text-[16px] text-gray-900 font-semibold">Wayfinding & Directionals</h3>
+                    <p className="text-gray-600 text-[12px] leading-relaxed">Clear, custom wayfinding signage for malls, offices, hospitals, and buildings. Designed for function, brand consistency, and professional installation across Dubai.</p>
+                    <Image
+                      src="/images/services batal strip.png"
+                      alt="Services Strip"
+                      width={147}
+                      height={4}
+                      className="w-[147px] h-[4px] object-cover"
+                    />
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h3 className="text-[16px] text-gray-900 font-semibold">Vehicle Branding</h3>
+                    <p className="text-gray-600 text-[12px] leading-relaxed">Turn cars, vans, and bikes into mobile ads with custom vehicle wraps and branding stickers. Ideal for delivery fleets and service vehicles across the UAE.</p>
+                    <Image
+                      src="/images/services batal strip.png"
+                      alt="Services Strip"
+                      width={147}
+                      height={4}
+                      className="w-[147px] h-[4px] object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -286,34 +323,35 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <Image
-                    src="/images/Group (5).png"
+                    src="/images/Group (6).png"
                     alt="DARWISH CAFE Interior"
-                    width={300}
-                    height={200}
-                    className="rounded-lg shadow-lg object-cover"
+                    width={343}
+                    height={275}
+                    className="rounded-lg shadow-lg object-cover w-[343px] h-[275px]"
+                  />
+                  <div className="flex flex-row gap-2"><Image
+                    src="/images/Rectangle 8.png"
+                    alt="Circular Ornate Sign"
+                    width={166}
+                    height={210}
+                    className="rounded-lg shadow-lg object-cover w-[140px] h-[210px]"
                   />
                   <Image
-                    src="/images/Group (6).png"
+                    src="/images/Rectangle 9.png"
                     alt="Circular Ornate Sign"
-                    width={300}
-                    height={200}
-                    className="rounded-lg shadow-lg object-cover"
+                    width={166}
+                    height={210}
+                    className="rounded-lg shadow-lg object-cover w-[140px] h-[210px]"
                   />
+                  </div>
                 </div>
                 <div className="space-y-4">
                   <Image
-                    src="/images/Group 10.png"
+                    src="/images/Group (2).png"
                     alt="Modern Building with Banners"
-                    width={300}
-                    height={200}
-                    className="rounded-lg shadow-lg object-cover"
-                  />
-                  <Image
-                    src="/images/Group 11.png"
-                    alt="ChTime Registration Desk Sign"
-                    width={300}
-                    height={200}
-                    className="rounded-lg shadow-lg object-cover"
+                    width={258}
+                    height={500}
+                    className="rounded-lg shadow-lg object-cover w-[258px] h-[497px]"
                   />
                 </div>
               </div>
@@ -355,41 +393,33 @@ export default function Home() {
             {/* Right Content - Three Graphics */}
             <div className="flex items-center justify-center gap-8">
               <div className="text-center">
-                <div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200">
-                  <svg className="w-12 h-12 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <div className="text-center">
-                  <div className="text-lg font-bold text-gray-800 mb-1">INFINITY</div>
-                  <div className="text-sm text-gray-600">VISUALS. CAMPAIGNS. CONTENT</div>
-                </div>
+                <Image
+                  src="/images/Group 10.png"
+                  alt="Group 10"
+                  width={169}
+                  height={117}
+                  className="w-[169px] h-[117px] rounded-lg object-cover"
+                />
               </div>
               
               <div className="text-center">
-                <div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200 relative">
-                  <div className="space-y-1">
-                    <div className="w-14 h-3 bg-amber-600 rounded"></div>
-                    <div className="w-14 h-3 bg-lime-500 rounded"></div>
-                    <div className="w-14 h-3 bg-black rounded"></div>
-                  </div>
-                  <div className="absolute -top-2 -right-2">
-                    <svg className="w-8 h-8 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                    </svg>
-                  </div>
-                </div>
-                <div className="text-sm text-gray-600">Creative Ideas</div>
+                <Image
+                  src="/images/Group 11.png"
+                  alt="Group 11"
+                  width={96}
+                  height={117}
+                  className="w-[96] h-[117px] rounded-lg object-cover"
+                />
               </div>
               
               <div className="text-center">
-                <div className="w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center mb-3 border border-gray-200">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-gray-800 mb-1">∞</div>
-                    <div className="text-sm text-gray-600">INFINITY</div>
-                  </div>
-                </div>
-                <div className="text-sm text-gray-600">3D Branding</div>
+                <Image
+                  src="/images/Rectangle.png"
+                  alt="Rectangle"
+                  width={198}
+                  height={84}
+                  className="w-[198px] h-[84px] rounded-lg object-cover"
+                />
               </div>
             </div>
           </div>
