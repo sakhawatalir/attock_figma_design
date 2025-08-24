@@ -1,11 +1,11 @@
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Hero Section with Asset SVG */}
       <section className="relative py-20 bg-white">
@@ -491,13 +491,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-lg">&copy; 2024 BATAL. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

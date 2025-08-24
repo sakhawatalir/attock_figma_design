@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -22,31 +23,45 @@ export default function Navbar() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Image
-              src="/images/Logo.png"
-              alt="BATAL Logo"
-              width={140}
-              height={25}
-              className="h-8 w-auto"
-            />
+            <Link href="/">
+              <Image
+                src="/images/Logo.png"
+                alt="BATAL Logo"
+                width={140}
+                height={25}
+                className="h-8 w-auto cursor-pointer"
+              />
+            </Link>
           </div>
 
           {/* Navigation */}
           <nav className="hidden md:flex space-x-10">
-            <a href="#" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">HOME</a>
-            <a href="#" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">ABOUT US</a>
-            <a href="#" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">PROJECTS</a>
-            <a href="#" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">SERVICES</a>
-            <a href="#" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">CONTACT</a>
+            <Link href="/" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">
+              HOME
+            </Link>
+            <Link href="/about" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">
+              ABOUT US
+            </Link>
+            <Link href="/projects" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">
+              PROJECTS
+            </Link>
+            <Link href="/services" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">
+              SERVICES
+            </Link>
+            <Link href="/contact" className="text-gray-800 hover:text-green-600 font-semibold text-sm tracking-wide transition-colors">
+              CONTACT
+            </Link>
           </nav>
 
           {/* CTA Button */}
-          <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-medium text-sm transition-colors flex items-center gap-2 shadow-md">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-            </svg>
-            A Quick Quote?
-          </button>
+          <Link href="/contact">
+            <button className="bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-medium text-sm transition-colors flex items-center gap-2 shadow-md">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+              </svg>
+              A Quick Quote?
+            </button>
+          </Link>
         </div>
       </div>
     </header>
