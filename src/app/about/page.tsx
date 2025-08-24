@@ -24,7 +24,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-bold text-gray-900">Our Story</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Founded in 2009, BATAL has grown from a small signage workshop to become 
-                one of Dubai's most trusted signage companies. We've helped thousands of 
+                one of Dubai&apos;s most trusted signage companies. We&apos;ve helped thousands of 
                 businesses establish their visual presence through innovative signage solutions.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -93,7 +93,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
-            <p className="text-xl text-gray-600">Meet the experts behind BATAL's success</p>
+            <p className="text-xl text-gray-600">Meet the experts behind BATAL&apos;s success</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">

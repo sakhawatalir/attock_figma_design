@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 export default function ContactPage() {
   return (
@@ -10,7 +10,7 @@ export default function ContactPage() {
             <h1 className="text-5xl font-bold text-gray-900 mb-6">Contact Us</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Ready to start your signage project? Get in touch with our team for a 
-              free consultation and quote. We're here to bring your vision to life.
+                                    free consultation and quote. We&apos;re here to bring your vision to life.
             </p>
           </div>
         </div>

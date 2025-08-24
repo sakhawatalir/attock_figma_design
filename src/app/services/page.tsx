@@ -23,7 +23,7 @@ export default function ServicesPage() {
             <div className="space-y-6">
               <h2 className="text-4xl font-bold text-gray-900">Why Choose BATAL?</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                With over 15 years of experience in the signage industry, we've mastered 
+                With over 15 years of experience in the signage industry, we&apos;ve mastered 
                 the art of creating impactful visual solutions that drive business growth.
               </p>
               <div className="space-y-4">

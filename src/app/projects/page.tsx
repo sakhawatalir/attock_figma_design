@@ -225,7 +225,7 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can bring your vision to life with our expert signage solutions.
+                            Let&apos;s discuss how we can bring your vision to life with our expert signage solutions.
           </p>
           <button className="bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg">
             Get a Free Quote
