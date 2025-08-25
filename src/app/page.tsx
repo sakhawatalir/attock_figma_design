@@ -77,7 +77,7 @@ export default function Home() {
           {/* Right Content with Asset SVG - Full Width */}
           <div className="relative w-full h-full lg:col-span-1">
             <Image
-              src="/images/Asset 1 1 (1).svg"
+              src="/images/Hero.jpg"
               alt="Asset SVG"
               width={1500}
               height={900}
@@ -444,12 +444,24 @@ export default function Home() {
               {/* Left Services List */}
               <div className="space-y-6">
                 <div className="space-y-4">
-                  <div className="text-[26px] font-bold"><i className=" text-green-600"> BATAL</i> Illuminated Signage</div>
-                  <div className="text-[26px] font-bold" ><i className=" text-green-600"> BATAL</i> Vinyl & Frosted Sticker</div>
-                  <div className="text-[26px] font-bold" ><i className=" text-green-600"> BATAL</i> Services</div>
-                  <div className="text-[26px] font-bold"><i className=" text-green-600"> BATAL</i> Pylon Hoardings</div>
-                  <div className="text-[26px] font-bold"><i className=" text-green-600"> BATAL</i> Wayfinding</div>
-                  <div className="text-[26px] font-bold"><i className=" text-green-600"> BATAL</i> Vehicle Branding</div>
+                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
+                    <i className=" text-green-600"> BATAL</i> Illuminated Signage
+                  </div>
+                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
+                    <i className=" text-green-600"> BATAL</i> Vinyl & Frosted Sticker
+                  </div>
+                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
+                    <i className=" text-green-600"> BATAL</i> Services
+                  </div>
+                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
+                    <i className=" text-green-600"> BATAL</i> Pylon Hoardings
+                  </div>
+                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-300 cursor-pointer">
+                    <i className=" text-green-600"> BATAL</i> Wayfinding
+                  </div>
+                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
+                    <i className=" text-green-600"> BATAL</i> Vehicle Branding
+                  </div>
                 </div>
               </div>
 
@@ -458,9 +470,9 @@ export default function Home() {
                 <Image
                   src="/images/Rectangle 11.png"
                   alt="3D Nike Logo"
-                  width={500}
-                  height={400}
-                  className="rounded-lg shadow-xl mx-auto object-cover"
+                  width={700}
+                  height={600}
+                  className="mx-auto object-cover"
                 />
               </div>
             </div>
