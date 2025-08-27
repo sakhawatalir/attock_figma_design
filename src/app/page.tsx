@@ -31,7 +31,7 @@ export default function Home() {
               {/* Color Strip Image */}
               <div className="flex justify-center">
                 <Image
-                  src="/images/Group (7).png"
+                  src="/images/Group.svg"
                   alt="Color Strip"
                   width={300}
                   height={10}
@@ -69,9 +69,14 @@ export default function Home() {
 
               {/* CTA */}
               <div className="pt-4">
-                <button className="text-2xl font-bold text-gray-900 hover:text-green-600 transition-colors">
+                <a 
+                  href="https://wa.me/971588929900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-2xl font-bold text-gray-900 hover:text-green-600 transition-colors cursor-pointer inline-block"
+                >
                   [GET IN TOUCH]
-                </button>
+                </a>
                 <div className="w-16 h-0.5 bg-black mt-2"></div>
                 <p className="text-lg text-gray-600 mt-2">For Free Consultation</p>
               </div>
@@ -82,7 +87,7 @@ export default function Home() {
           {/* Right Content with Asset SVG - Full Width */}
           <div className="relative w-full h-full lg:col-span-1">
             <Image
-              src="/images/Asset 1 1 (1).svg"
+              src="/images/Hero.svg"
               alt="Asset SVG"
               width={1500}
               height={900}
@@ -634,84 +639,97 @@ export default function Home() {
             <div className="text-center">
               <div className="mb-3">
                 <Image
-                  src="/images/Group (1).png"
+                  src="/images/Section Services (1).jpeg"
                   alt="Offices Signage"
                   width={300}
                   height={300}
                   className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                 />
               </div>
-              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+              <p className="text-base font-medium text-gray-800 whitespace-pre-line">
+  OFFICE SIGNAGE
+  <br />
+  (acrylic letters, backlit, 3D logos for corporate offices)
+</p>
             </div>
 
             {/* Row 1 - Image 2 */}
             <div className="text-center">
               <div className="mb-3">
                 <Image
-                  src="/images/Group (6).png"
+                  src="/images/Section Services (3).jpg"
                   alt="Retail Shop Front Sign"
                   width={300}
                   height={300}
                   className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                 />
               </div>
-              <p className="text-base font-medium text-gray-800">Retail / Shop Front Sign</p>
+              <p className="text-base font-medium text-gray-800 whitespace-pre-line">Retail / Shopfront Signage
+              (restaurants, cafes, boutiques – like the Darwish Cafe example)</p>
             </div>
 
             {/* Row 1 - Image 3 */}
             <div className="text-center">
               <div className="mb-3">
                 <Image
-                  src="/images/Group (2).png"
+                  src="/images/Section Services (2).jpg"
                   alt="Digital Display"
                   width={300}
                   height={300}
                   className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                 />
               </div>
-              <p className="text-base font-medium text-gray-800">Digital Display</p>
+              <p className="text-base font-medium text-gray-800 whitespace-pre-line">Digital Screens
+              <br />
+              (interactive kiosks, LED displays, menu boards)</p>
             </div>
 
             {/* Row 1 - Image 4 */}
             <div className="text-center">
               <div className="mb-3">
                 <Image
-                  src="/images/Group (3).png"
+                  src="/images/Section Services (4).jpg"
                   alt="Offices Signage"
                   width={300}
                   height={300}
                   className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                 />
               </div>
-              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+              <p className="text-base font-medium text-gray-800 whitespace-pre-line">Digital Screens
+                <br />
+              (interactive kiosks, LED displays, menu boards)</p>
             </div>
 
             {/* Row 2 - Image 1 */}
             <div className="text-center">
               <div className="mb-3">
                 <Image
-                  src="/images/Group (4).png"
+                  src="/images/Section Services (2).jpeg"
                   alt="Offices Signage"
                   width={300}
                   height={300}
                   className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                 />
               </div>
-              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+              <p className="text-base font-medium text-gray-800 whitespace-pre-line">Vinyl Graphics & Wall Art
+              <br />
+                  (custom vinyl installation, wallpapers, creative wall branding)</p>
             </div>
 
             {/* Row 2 - Image 2 */}
             <div className="text-center">
               <div className="mb-3">
                 <Image
-                  src="/images/Group (5).png"
+                  src="/images/Section Services (1).png"
                   alt="Offices Signage"
                   width={300}
                   height={300}
                   className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                 />
               </div>
-              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+              <p className="text-base font-medium text-gray-800 whitespace-pre-line"> Vehicle Branding
+              <br />
+              (car wraps, delivery vans, fleet graphics)</p>
             </div>
 
             {/* Row 2 - Image 3 */}
@@ -719,14 +737,16 @@ export default function Home() {
               <div className="text-center">
                 <div className="mb-3">
                   <Image
-                    src="/images/Group.png"
+                    src="/images/Section Services (1).jpg"
                     alt="Offices Signage"
                     width={300}
                     height={300}
                     className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                   />
                 </div>
-                <p className="text-base font-medium text-gray-800">Offices Signage</p>
+                <p className="text-base font-medium text-gray-800 whitespace-pre-line"> Flags & Promotional Stands
+                  <br />
+                (roll-up banners, fabric flags, event displays)</p>
               </div>
             </div>
 
@@ -734,14 +754,16 @@ export default function Home() {
             <div className="text-center">
               <div className="mb-3">
                 <Image
-                  src="/images/Group 4.png"
+                  src="/images/Section Services (2).png"
                   alt="Offices Signage"
                   width={300}
                   height={300}
                   className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
                 />
               </div>
-              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+              <p className="text-base font-medium text-gray-800 whitespace-pre-line">Wayfinding & Interior Branding 
+              <br />
+                (wall logos, directional signage)</p>
             </div>
           </div>
         </div>

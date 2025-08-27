@@ -25,11 +25,11 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/">
               <Image
-                src="/images/Logo.png"
+                src="/images/Logos.svg"
                 alt="BATAL Logo"
                 width={140}
                 height={25}
-                className="h-8 w-auto cursor-pointer"
+                className="h-12 w-[170px] cursor-pointer"
               />
             </Link>
           </div>
