@@ -82,7 +82,7 @@ export default function Home() {
           {/* Right Content with Asset SVG - Full Width */}
           <div className="relative w-full h-full lg:col-span-1">
             <Image
-              src="/images/Hero.jpg"
+              src="/images/Asset 1 1 (1).svg"
               alt="Asset SVG"
               width={1500}
               height={900}
