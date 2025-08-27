@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 // import Navbar from "@/components/Navbar";
 
 export default function Home() {
+  const [hoveredService, setHoveredService] = useState('');
+
   return (
     <div className="min-h-screen">
       {/* Header */}
@@ -391,37 +396,58 @@ export default function Home() {
             </div>
 
             {/* Right Content - Three Graphics */}
-            <div className="flex items-center justify-center gap-8">
-              <div className="text-center">
-                <Image
-                  src="/images/Group 10.png"
-                  alt="Group 10"
-                  width={169}
-                  height={117}
-                  className="w-[169px] h-[117px] rounded-lg object-cover"
-                />
-              </div>
-              
-              <div className="text-center">
-                <Image
-                  src="/images/Group 11.png"
-                  alt="Group 11"
-                  width={96}
-                  height={117}
-                  className="w-[96] h-[117px] rounded-lg object-cover"
-                />
-              </div>
-              
-              <div className="text-center">
-                <Image
-                  src="/images/Rectangle.png"
-                  alt="Rectangle"
-                  width={198}
-                  height={84}
-                  className="w-[198px] h-[84px] rounded-lg object-cover"
-                />
-              </div>
-            </div>
+            <div className="flex flex-col items-center gap-6">
+  {/* Row with first two images */}
+  <div className="flex flex-col items-center gap-6">
+  {/* First row with two images */}
+  <div className="flex items-center justify-center gap-8">
+    <div className="text-center">
+      <Image
+        src="/images/box.png"
+        alt="Group 10"
+        width={250}
+        height={200}
+        className="w-[250px] h-[200px] object-cover"
+      />
+    </div>
+
+    <div className="text-center">
+      <Image
+        src="/images/box2.png"
+        alt="Group 11"
+        width={250}
+        height={200}
+        className="w-[250px] h-[200px] object-cover"
+      />
+    </div>
+  </div>
+
+  {/* Second row with two images */}
+  <div className="flex items-center justify-center gap-8">
+    <div className="text-center">
+      <Image
+        src="/images/box1.png"
+        alt="Rectangle 1"
+        width={250}
+        height={200}
+        className="w-[250px] h-[200px] object-cover"
+      />
+    </div>
+
+    <div className="text-center">
+      <Image
+        src="/images/car.png"
+        alt="Rectangle 2"
+        width={250}
+        height={200}
+        className="w-[250px] h-[200px] object-cover"
+      />
+    </div>
+  </div>
+</div>
+
+</div>
+
           </div>
         </div>
         
@@ -442,65 +468,293 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               {/* Left Services List */}
-              <div className="space-y-6">
-                <div className="space-y-4">
-                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
-                    <i className=" text-green-600"> BATAL</i> Illuminated Signage
+              <div className="space-y-12">
+                <div className="space-y-10">
+                  <div 
+                    className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-700 ease-in-out cursor-pointer group relative"
+                    onMouseEnter={() => setHoveredService('illuminated')}
+                    onMouseLeave={() => setHoveredService('')}
+                  >
+                    <div className="flex items-center">
+                      <svg 
+                        className="w-6 h-6 text-transparent group-hover:text-green-600 transition-all duration-700 ease-in-out mr-3 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span><i className="text-green-600"> BATAL</i> Illuminated Signage</span>
+                    </div>
                   </div>
-                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
-                    <i className=" text-green-600"> BATAL</i> Vinyl & Frosted Sticker
+                  
+                  <div 
+                    className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-700 ease-in-out cursor-pointer group relative"
+                    onMouseEnter={() => setHoveredService('vinyl')}
+                    onMouseLeave={() => setHoveredService('')}
+                  >
+                    <div className="flex items-center">
+                      <svg 
+                        className="w-6 h-6 text-transparent group-hover:text-green-600 transition-all duration-700 ease-in-out mr-3 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span><i className="text-green-600"> BATAL</i> Vinyl & Frosted Sticker</span>
+                    </div>
                   </div>
-                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
-                    <i className=" text-green-600"> BATAL</i> Services
+                  
+                  <div 
+                    className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-700 ease-in-out cursor-pointer group relative"
+                    onMouseEnter={() => setHoveredService('services')}
+                    onMouseLeave={() => setHoveredService('')}
+                  >
+                    <div className="flex items-center">
+                      <svg 
+                        className="w-6 h-6 text-transparent group-hover:text-green-600 transition-all duration-700 ease-in-out mr-3 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span><i className="text-green-600"> BATAL</i> Services</span>
+                    </div>
                   </div>
-                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
-                    <i className=" text-green-600"> BATAL</i> Pylon Hoardings
+                  
+                  <div 
+                    className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-700 ease-in-out cursor-pointer group relative"
+                    onMouseEnter={() => setHoveredService('hoardings')}
+                    onMouseLeave={() => setHoveredService('')}
+                  >
+                    <div className="flex items-center">
+                      <svg 
+                        className="w-6 h-6 text-transparent group-hover:text-green-600 transition-all duration-700 ease-in-out mr-3 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span><i className="text-green-600"> BATAL</i> Pylon Hoardings</span>
+                    </div>
                   </div>
-                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-300 cursor-pointer">
-                    <i className=" text-green-600"> BATAL</i> Wayfinding
+                  
+                  <div 
+                    className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-700 ease-in-out cursor-pointer group relative"
+                    onMouseEnter={() => setHoveredService('wayfinding')}
+                    onMouseLeave={() => setHoveredService('')}
+                  >
+                    <div className="flex items-center">
+                      <svg 
+                        className="w-6 h-6 text-transparent group-hover:text-green-600 transition-all duration-700 ease-in-out mr-3 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span><i className="text-green-600"> BATAL</i> Wayfinding</span>
+                    </div>
                   </div>
-                  <div className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-800 cursor-pointer">
-                    <i className=" text-green-600"> BATAL</i> Vehicle Branding
+                  
+                  <div 
+                    className="text-[26px] font-bold hover:bg-[#E9E9E9] hover:px-6 hover:py-2 rounded-4xl transition-all duration-700 ease-in-out cursor-pointer group relative"
+                    onMouseEnter={() => setHoveredService('vehicle')}
+                    onMouseLeave={() => setHoveredService('')}
+                  >
+                    <div className="flex items-center">
+                      <svg 
+                        className="w-6 h-6 text-transparent group-hover:text-green-600 transition-all duration-700 ease-in-out mr-3 group-hover:translate-x-1" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        strokeWidth="2" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/>
+                      </svg>
+                      <span><i className="text-green-600"> BATAL</i> Vehicle Branding</span>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Right Image - Nike Logo */}
+              {/* Right Image - Dynamic based on hovered service */}
               <div className="text-center">
                 <Image
-                  src="/images/Rectangle 11.png"
-                  alt="3D Nike Logo"
+                  src={
+                    hoveredService === 'illuminated' ? "/images/box1.png" :
+                    hoveredService === 'vinyl' ? "/images/box2.png" :
+                    hoveredService === 'services' ? "/images/box1.png" :
+                    hoveredService === 'hoardings' ? "/images/box2.png" :
+                    hoveredService === 'wayfinding' ? "/images/box1.png" :
+                    hoveredService === 'vehicle' ? "/images/box2.png" :
+                    "/images/Rectangle 11.png" // Default image
+                  }
+                  alt={
+                    hoveredService === 'illuminated' ? "Illuminated Signage" :
+                    hoveredService === 'vinyl' ? "Vinyl & Frosted Sticker" :
+                    hoveredService === 'services' ? "BATAL Services" :
+                    hoveredService === 'hoardings' ? "Pylon Hoardings" :
+                    hoveredService === 'wayfinding' ? "Wayfinding" :
+                    hoveredService === 'vehicle' ? "Vehicle Branding" :
+                    "3D Nike Logo"
+                  }
                   width={700}
                   height={600}
-                  className="mx-auto object-cover"
+                  className="mx-auto object-cover transition-all duration-700 ease-in-out transform hover:scale-105"
                 />
               </div>
             </div>
           </div>
+          <div className="w-full">
+          <Image
+            src="/images/services strip.png"
+            alt="Services Strip"
+            width={1920}
+            height={4}
+            className="w-full h-1 mt-16 object-cover"
+          />
+        </div>
         </section>
         
         {/* Product Showcase Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Products */}
-            <div className="space-y-8">
-             <Image
-               src="/images/Rectangle 12.png"
-               alt="Rectangle 12"
-               width={500}
-               height={400}
-               className="w-full h-auto object-cover"
-             />
+      <section className="bg-white">    
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          {/* 2x4 Grid of Signage Images */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Row 1 - Image 1 */}
+            <div className="text-center">
+              <div className="mb-3">
+                <Image
+                  src="/images/Group (1).png"
+                  alt="Offices Signage"
+                  width={300}
+                  height={300}
+                  className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                />
+              </div>
+              <p className="text-base font-medium text-gray-800">Offices Signage</p>
             </div>
 
-            {/* Right Content */}
-            <div className="space-y-8">
-              <div className="text-right">
-                <h2 className="text-3xl font-bold text-green-600 italic">Our 15 Years Trust</h2>
+            {/* Row 1 - Image 2 */}
+            <div className="text-center">
+              <div className="mb-3">
+                <Image
+                  src="/images/Group (6).png"
+                  alt="Retail Shop Front Sign"
+                  width={300}
+                  height={300}
+                  className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                />
+              </div>
+              <p className="text-base font-medium text-gray-800">Retail / Shop Front Sign</p>
+            </div>
+
+            {/* Row 1 - Image 3 */}
+            <div className="text-center">
+              <div className="mb-3">
+                <Image
+                  src="/images/Group (2).png"
+                  alt="Digital Display"
+                  width={300}
+                  height={300}
+                  className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                />
+              </div>
+              <p className="text-base font-medium text-gray-800">Digital Display</p>
+            </div>
+
+            {/* Row 1 - Image 4 */}
+            <div className="text-center">
+              <div className="mb-3">
+                <Image
+                  src="/images/Group (3).png"
+                  alt="Offices Signage"
+                  width={300}
+                  height={300}
+                  className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                />
+              </div>
+              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+            </div>
+
+            {/* Row 2 - Image 1 */}
+            <div className="text-center">
+              <div className="mb-3">
+                <Image
+                  src="/images/Group (4).png"
+                  alt="Offices Signage"
+                  width={300}
+                  height={300}
+                  className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                />
+              </div>
+              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+            </div>
+
+            {/* Row 2 - Image 2 */}
+            <div className="text-center">
+              <div className="mb-3">
+                <Image
+                  src="/images/Group (5).png"
+                  alt="Offices Signage"
+                  width={300}
+                  height={300}
+                  className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                />
+              </div>
+              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+            </div>
+
+            {/* Row 2 - Image 3 */}
+            <div className="text-center">
+              <div className="text-center">
+                <div className="mb-3">
+                  <Image
+                    src="/images/Group.png"
+                    alt="Offices Signage"
+                    width={300}
+                    height={300}
+                    className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                  />
+                </div>
+                <p className="text-base font-medium text-gray-800">Offices Signage</p>
               </div>
             </div>
+
+            {/* Row 2 - Image 4 */}
+            <div className="text-center">
+              <div className="mb-3">
+                <Image
+                  src="/images/Group 4.png"
+                  alt="Offices Signage"
+                  width={300}
+                  height={300}
+                  className="w-[300px] h-[150px] object-cover rounded-[40px] border-2 border-green-600"
+                />
+              </div>
+              <p className="text-base font-medium text-gray-800">Offices Signage</p>
+            </div>
           </div>
+        </div>
+        
+        {/* Bottom Services Strip */}
+        <div className="w-full">
+          <Image
+            src="/images/services strip.png"
+            alt="Services Strip"
+            width={1920}
+            height={4}
+            className="w-full h-1 object-cover"
+          />
         </div>
       </section>
     </div>
