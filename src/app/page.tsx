@@ -179,7 +179,7 @@ export default function Home() {
         <div className="grid grid-cols-4 gap-0 w-full">
           <div className="w-full h-[458px] overflow-hidden">
             <Image
-              src="/images/Group (5).png"
+              src="/images/01.svg"
               alt="CUZCO RESTAURANT Sign"
               width={360}
               height={458}
