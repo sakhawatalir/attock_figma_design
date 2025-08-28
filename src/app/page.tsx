@@ -179,7 +179,7 @@ export default function Home() {
         <div className="grid grid-cols-4 gap-0 w-full">
           <div className="w-full h-[458px] overflow-hidden">
             <Image
-              src="/images/01.webp"
+              src="/images/01.svg"
               alt="CUZCO RESTAURANT Sign"
               width={360}
               height={458}
@@ -188,7 +188,7 @@ export default function Home() {
           </div>
           <div className="w-full h-[458px] overflow-hidden">
             <Image
-              src="/images/Group (3).png"
+              src="/images/02.svg"
               alt="ILIO Sign with Cherub"
               width={360}
               height={458}
@@ -197,7 +197,7 @@ export default function Home() {
           </div>
           <div className="w-full h-[458px] overflow-hidden">
             <Image
-              src="/images/Group (2).png"
+              src="/images/03.svg"
               alt="CONNECT AI Illuminated Sign"
               width={360}
               height={458}
@@ -206,7 +206,7 @@ export default function Home() {
           </div>
           <div className="w-full h-[458px] overflow-hidden">
             <Image
-              src="/images/Group (1).png"
+              src="/images/04.svg"
               alt="Modern Building with ILIO Display"
               width={360}
               height={458}
